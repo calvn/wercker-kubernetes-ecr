@@ -18,6 +18,6 @@ spec:
         image: ${AWS_REGISTRY_ID}.dkr.ecr.us-east-1.amazonaws.com/cities:${WERCKER_GIT_COMMIT}
         ports:
         - name: http-server
-          containerPort: 8081
+          containerPort: 5000
           protocol: TCP
 EOF
