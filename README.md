@@ -10,9 +10,7 @@ $ aws cloudformation create-stack --stack-name cities-ecr --template-body file:/
 ```
 ## Workflow
 
-This example contains updated templates for Wercker as well as Kubernetes.
-
-The [workflow](http://devcenter.wercker.com/docs/workflows) can be set up on Wercker to be the following pipelines for deployment:
+The [workflow](http://devcenter.wercker.com/docs/workflows) can be set up on Wercker to the following pipelines for deployment:
 
 ```
 build => push-ecr => deploy
