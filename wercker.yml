@@ -55,12 +55,3 @@ deploy:
       token: $KUBERNETES_TOKEN     # Alternatively KUBERNETES_USERNAME and KUBERNETES_PASSWORD can be used
       insecure-skip-tls-verify: true
       command: apply -f cities-service.yml
-
-rolling-update:
-  box: google/golang
-  steps:
-    - kubectl:
-        server: $KUBERNETES_MASTER
-        token: $KUBERNETES_TOKEN     # Alternatively KUBERNETES_USERNAME and KUBERNETES_PASSWORD can be used
-        insecure-skip-tls-verify: true
-        command: rolling-update cities cities-deployment.yml

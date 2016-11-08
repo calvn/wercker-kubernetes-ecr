@@ -16,8 +16,4 @@ The [workflow](http://devcenter.wercker.com/docs/workflows) can be set up on Wer
 build => push-ecr => deploy
 ```
 
-And for rolling updates:
-
-```
-build => push-ecr => rolling-update
-```
+Rolling updates will automatically apply whenever Kubernetes detects a change in `.spec.template`. More information regarding deployments can be found [here](http://kubernetes.io/docs/user-guide/deployments/#updating-a-deployment).
